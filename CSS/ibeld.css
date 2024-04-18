@@ -501,7 +501,17 @@ ul{
     font-weight: bold;
     font-size: 20px;
     padding: 10px 30px;
-    color: red;
+    border-radius: 6px;
+}
+.features .quality .img-holder::before{
+    background-color: #f44036;
+}
+.features .quality h2::after{
+    background-color: #f44036;
+}
+.features .quality a{
+    color: #f44036;
+    border-color: #f44036;
 }
 
 /* end features */ 

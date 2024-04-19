@@ -579,17 +579,23 @@ ul{
 }
 .estimonials .box h3{
     margin: 0 0 10px;
+    text-transform: capitalize;
 }
 .testimonials .box .title{
     color: #777;
     margin-bottom: 10px;
     display: block;
+    text-transform: capitalize;
 }
 .testimonials .box .rate .filled{
     color: #ffc107;
 }
 .testimonials .box p{
     line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #777;
+    font-size: 13px;
 }
 /* end testimonials */ 
 /* start animation */ 

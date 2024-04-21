@@ -715,6 +715,12 @@ ul{
     position: absolute;
     width: 0;
 }
+.services .box .info{
+    padding: 15px;
+    position: relative;
+    background-color: #f9f9f9;
+    text-align: right;
+}
 .services .box .info::before{
     content: '0' counter(services);
     position: absolute;
@@ -725,6 +731,24 @@ ul{
     height: 100%;
     width: 80px;
     font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.services .box .info::after{
+    content: '';
+    position: absolute;
+    background-color: #d5d5d5;
+    top: 0;
+    left: 80px;
+    width: 50px;
+    height: calc(100% + 0.4px);
+    transform: skewX(-30deg);
+}
+.services .box .info a{
+    color: var(--main-color);
 }
 .services .box > i{
     margin: 30px auto 20px;
@@ -738,12 +762,7 @@ ul{
     font-size: 25px;
     color: var(--main-color);
 }
-.services .box .info{
-    padding: 15px;
-    position: relative;
-    background-color: #f9f9f9;
-    text-align: right;
-}
+
 /* end services */ 
 /* start animation */ 
 @keyframes up-and-down {

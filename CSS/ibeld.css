@@ -705,7 +705,7 @@ ul{
     transition: var(--main-transition);
     position: relative;
 }
-.services .box:hover{
+.services .box::before{
     content: '';
     left: 50%;
     transform: translateX(-50%);
@@ -714,6 +714,13 @@ ul{
     background-color: var(--main-color);
     position: absolute;
     width: 0;
+    transition: var(--main-transition);
+}
+.services .box:hover{
+    transform: translateY(-10px);
+}
+.services .box:hover::before{
+    width: 100%;
 }
 .services .box .info{
     padding: 15px;
@@ -762,8 +769,10 @@ ul{
     font-size: 25px;
     color: var(--main-color);
 }
-
 /* end services */ 
+/* start skills */ 
+
+/* end skills */ 
 /* start animation */ 
 @keyframes up-and-down {
     0%, 100% {

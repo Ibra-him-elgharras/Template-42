@@ -813,6 +813,44 @@ ul{
     background-color: var(--main-color);
 }
 /* end skills */ 
+/* start works */ 
+.work{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+.work .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.work .image{
+    max-width: 50%;
+    margin-right: 100px;
+}
+.work .info .box{
+    background-color: #f6f5f5;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    display: flex;
+    align-content: center;
+    border: 2px solid white;
+    position: relative;
+    z-index: 1;
+}
+.work .info .box img{
+    width: 64px;
+    margin-right: 30px;
+}
+.work .info .box h3{
+
+}
+.work .info .box p{
+
+}
+/* end works */ 
 /* start animation */ 
 @keyframes up-and-down {
     0%, 100% {

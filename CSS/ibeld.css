@@ -840,15 +840,30 @@ ul{
     position: relative;
     z-index: 1;
 }
+.work .info .box::before{
+    content: '';
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    background-color: #ededed;
+    z-index: -1;
+}
 .work .info .box img{
     width: 64px;
     margin-right: 30px;
 }
 .work .info .box h3{
-
+    margin: 0;
+    font-size: 22px;
 }
 .work .info .box p{
-
+    color: #777;
+    line-height: 1.7;
+    margin: 10px 0 0;
+    font-size: 15px;
 }
 /* end works */ 
 /* start animation */ 

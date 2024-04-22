@@ -825,9 +825,19 @@ ul{
     align-items: center;
     justify-content: space-between;
 }
+@media (max-width: 991px) {
+    .work .container{
+        flex-direction: column;
+    }
+}
 .work .image{
     max-width: 50%;
     margin-right: 100px;
+}
+@media (max-width: 991px) {
+    .work .image{
+        margin: 0 0 50px;
+    }
 }
 .work .info .box{
     background-color: #f6f5f5;
@@ -839,6 +849,7 @@ ul{
     border: 2px solid white;
     position: relative;
     z-index: 1;
+    flex-direction: column;
 }
 .work .info .box::before{
     content: '';
@@ -850,6 +861,11 @@ ul{
     transform: translate(-50%, -50%);
     background-color: #ededed;
     z-index: -1;
+    transition: var(--main-transition);
+}
+.work .info .box:hover::before{
+    width: 100%;
+    height: 100%;
 }
 .work .info .box img{
     width: 64px;

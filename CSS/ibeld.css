@@ -976,6 +976,11 @@ ul{
     flex: 1;
     caret-color: var(--main-color);
  }
+ @media (max-width: 767px) {
+    .events .subscribe form input[type="email"]{
+        border-radius: 0;
+    }
+ }
  .events .subscribe form input[type="email"]:focus{
     outline: none;
  }
@@ -994,6 +999,11 @@ ul{
     padding: 20px;
     cursor: pointer;
     transition: var(--main-transition);
+ }
+ @media (max-width: 767px) {
+    .events .subscribe form input[type="submit"]{
+        border-radius: 0;
+    }
  }
  .events .subscribe form input[type="submit"]:hover{
     background-color: var(--main-color-alt);

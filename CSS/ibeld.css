@@ -1025,14 +1025,37 @@ ul{
     position: relative;
     box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
     transition: var(--main-transition);
+    background-color: white;
+    text-align: center;
+    z-index: 1;
 }
 .pricing .box::before,
 .pricing .box::after{
     content: '';
-
+    width: 0;
+    height: 50%;
+    background-color: #f6f6f6;
+    position: absolute;
+    z-index: -1;
+    transition: var(--main-transition);
 }
 .pricing .box{
 
+}
+.pricing .box::after{
+    right: 0;
+    bottom: 0;
+}
+.pricing .box::before{
+    left: 0;
+    top: 0;
+}
+.pricing .box:hover::before,
+.pricing .box:hover::after{
+    width: 100%;
+}
+.pricing .box img{
+    max-width: 100%;
 }
 /* end pricing */ 
 /* start animation */ 

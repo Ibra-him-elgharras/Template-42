@@ -1009,6 +1009,32 @@ ul{
     background-color: var(--main-color-alt);
  }
 /* end events */ 
+/* start pricing */ 
+.pricing {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: var(--section-background);
+}
+.pricing .container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.pricing .box{
+    position: relative;
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    transition: var(--main-transition);
+}
+.pricing .box::before,
+.pricing .box::after{
+    content: '';
+
+}
+.pricing .box{
+
+}
+/* end pricing */ 
 /* start animation */ 
 @keyframes up-and-down {
     0%, 100% {

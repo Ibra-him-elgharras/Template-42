@@ -1021,9 +1021,6 @@ ul{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
-.pricing .box img{
-    max-width: 100%;
-}
 .pricing .box{
     position: relative;
     background-color: white;
@@ -1053,6 +1050,54 @@ ul{
 .pricing .box:hover::before,
 .pricing .box:hover::after{
     width: 100%;
+}
+@media (min-width: 1200px) {
+    .pricing .box.popular{
+        top: -20px;
+    }
+}
+.pricing .box.popular .label{
+    position: absolute;
+    writing-mode: vertical-rl;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px 35px 10px;
+    font-size: 18px;
+    right: 20px;
+    width: 40px;
+}
+.pricing .box.popular .label::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    border-width: 20px;
+}
+.pricing .box .title{
+    font-weight: bold;
+    margin: 30px 0;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+.pricing .box img{
+    max-width: 80px;
+    margin-bottom: 30px;
+}
+.pricing .box .price{
+    margin-bottom: 20px;
+}
+.pricing .box .amount{
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--main-color);
+}
+.pricing .box .time{
+    color: #777;
 }
 /* end pricing */ 
 /* start animation */ 

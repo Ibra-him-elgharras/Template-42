@@ -1010,7 +1010,7 @@ ul{
  }
 /* end events */ 
 /* start pricing */ 
-.pricing {
+.pricing{
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
     position: relative;
@@ -1018,20 +1018,23 @@ ul{
 }
 .pricing .container{
     display: grid;
-    gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.pricing .box img{
+    max-width: 100%;
 }
 .pricing .box{
     position: relative;
-    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
-    transition: var(--main-transition);
     background-color: white;
     text-align: center;
     z-index: 1;
+    transition: var(--main-transition);
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
 }
-.pricing .box::before,
-.pricing .box::after{
-    content: '';
+.pricing .box::after,
+.pricing .box::before{
+    content: "";
     width: 0;
     height: 50%;
     background-color: #f6f6f6;
@@ -1039,23 +1042,17 @@ ul{
     z-index: -1;
     transition: var(--main-transition);
 }
-.pricing .box{
-
+.pricing .box::before{
+    left: 0;
+    top: 0;
 }
 .pricing .box::after{
     right: 0;
     bottom: 0;
 }
-.pricing .box::before{
-    left: 0;
-    top: 0;
-}
 .pricing .box:hover::before,
 .pricing .box:hover::after{
     width: 100%;
-}
-.pricing .box img{
-    max-width: 100%;
 }
 /* end pricing */ 
 /* start animation */ 

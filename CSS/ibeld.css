@@ -1083,7 +1083,7 @@ ul{
     letter-spacing: -1px;
 }
 .pricing .box img{
-    max-width: 80px;
+    max-width: 100px;
     margin-bottom: 30px;
 }
 .pricing .box .price{
@@ -1098,6 +1098,35 @@ ul{
 }
 .pricing .box .time{
     color: #777;
+}
+.pricing .box ul{
+    text-align: left;
+}
+.pricing .box ul li{
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+.pricing .box ul li::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    margin-right: 10px;
+    font-weight: 900;
+    color: var(--main-color);
+}
+.pricing .box a {
+    display: block;
+    width: fit-content;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    margin: 30px auto 40px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+.pricing .box a:hover {
+    background-color: var(--main-color-alt);
+    color: white;
 }
 /* end pricing */ 
 /* start animation */ 

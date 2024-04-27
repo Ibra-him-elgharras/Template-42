@@ -1391,7 +1391,7 @@ ul{
 }
 .footer .box .social li a{
     background-color: #313131;
-    color: #b98889;
+    color: #b9b9b9;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1411,7 +1411,31 @@ ul{
 }
 .footer .box .text{
     line-height: 2;
-    color: #b98889;
+    color: #b9b9b9;
+}
+.footer .box .links li{
+    padding: 15px 0;
+    transition: var(--main-transition);
+}
+.footer .box .links li:not(:last-child){
+    border-bottom: 1px solid #444;
+}
+.footer .box .links li:hover{
+    padding-left: 10px;
+}
+.footer .box .links li:hover a{
+    color: white;
+}
+.footer .box .links li a{
+    color: #b9b9b9;
+    transition: var(--main-transition);
+}
+.footer .box .links li a::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f101";
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--main-color);
 }
 /* end footer */ 
 /* start animation */ 

@@ -376,7 +376,6 @@ ul{
     box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
     transform: translateY(-10px);
 }
-    
 .articles .box img{
     width: 100%;
     max-width: 100%;
@@ -632,7 +631,6 @@ ul{
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
     position: relative;
-    
 }
 .team .container{
     display: grid;
@@ -1373,11 +1371,6 @@ ul{
 .discount .form [type="submit"]:hover{
     background-color: var(--main-color-alt);
 }
-
-
-
-
-
 .discount .content{
     text-align: center;
     padding: 0 20px;
@@ -1413,7 +1406,6 @@ ul{
 }
 .footer .box .social{
     display: flex;
-
 }
 .footer .box .social li{
     margin-right: 10px;
